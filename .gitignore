@@ -1,4 +1,9 @@
 venv/
-_pycache_/
+__pycache__/
 *.pyc
+data/
+models/
+.env
+.vscode/
+.ipynb_checkpoints/
 .DS_Store
