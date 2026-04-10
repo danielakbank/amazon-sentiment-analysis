@@ -31,19 +31,22 @@ This project builds an end-to-end sentiment analysis pipeline on 500,000+ real A
 ---
 
 ## 🗂️ Project Structure
-amazon-sentiment-analysis/
-│── data/                        # Raw data and saved visualisations
-│── notebooks/
-│     ├── 01_eda_baseline.ipynb  # EDA and logistic regression
-│     └── 02_neural_network.ipynb# Neural network model
-│── models/                      # Saved model files
-│── app/
-│     └── app.py                 # Streamlit web application
-│── src/
-│     └── preprocess.py          # Reusable text cleaning module
-│── requirements.txt
-└── README.md
 
+amazon-sentiment-analysis/
+- app/
+  - app.py                 # Streamlit web application
+- src/
+  - preprocess.py          # Text cleaning and preprocessing
+- models/
+  - logistic_model.pkl     # Trained ML model
+  - tfidf_vectorizer.pkl   # TF-IDF vectorizer
+- notebooks/
+  - 01_eda_baseline.ipynb  # EDA + Logistic Regression
+  - 02_neural_network.ipynb# Neural Network model
+- data/
+  - (dataset files)        # Raw data & outputs
+- requirements.txt         # Dependencies
+- README.md                # Project documentation              
 ---
 
 ## 🛠️ Tech Stack
@@ -63,7 +66,7 @@ amazon-sentiment-analysis/
 ## 🚀 Run Locally
 
 ```bash
-git clone https://github.com/YOURUSERNAME/amazon-sentiment-analysis.git
+git clone https://github.com/danielakbank/amazon-sentiment-analysis.git
 cd amazon-sentiment-analysis
 pip install -r requirements.txt
 streamlit run app/app.py
@@ -82,4 +85,4 @@ streamlit run app/app.py
 
 ## 👤 Author
 **Your Name**  
-[LinkedIn](YOUR_LINKEDIN_URL) | [GitHub](YOUR_GITHUB_URL)
+[LinkedIn](https://www.linkedin.com/in/daniel-akinbankole-94312a218/) | [GitHub](https://github.com/danielakbank)
