@@ -4,7 +4,7 @@
 > upload any CSV, select your review column, and get instant sentiment insights.
 
 ## 🔗 Live Demo
-**[👉 Try the app here](YOUR_STREAMLIT_URL)**
+**[👉 Try the app here](https://danielakbank-review-sentiment-analyser-appapp-lkyajt.streamlit.app/)**
 
 ---
 
@@ -146,7 +146,7 @@ Visit `http://localhost:8501`
 The app works with **any CSV file** containing text reviews. To test it:
 
 1. Download the [Wine Reviews dataset from Kaggle](https://www.kaggle.com/datasets/zynicide/wine-reviews) (~50MB)
-2. Visit the [live app](YOUR_STREAMLIT_URL)
+2. Visit the [live app](https://danielakbank-review-sentiment-analyser-appapp-lkyajt.streamlit.app/)
 3. Upload the CSV
 4. Select `description` as your review column
 5. Select `country` and `variety` as category columns
@@ -198,24 +198,13 @@ You can also use Amazon, Yelp, app store, or any other review dataset in CSV for
 - Smaller memory footprint — better for cloud deployment
 - Easier to maintain and debug
 
----
-
-## 📸 Screenshots
-
-> *(Add screenshots of your app here once deployed)*
-
-| Dashboard | Category Analysis | Heatmap |
-|-----------|------------------|---------|
-| ![dashboard](data/dashboard.png) | ![categories](data/categories.png) | ![heatmap](data/heatmap.png) |
-
----
 
 ## 👤 Author
 
-**Dean** *(update with your full name)*
+**Daniel Akinbankole**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](YOUR_LINKEDIN_URL)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat&logo=github)](YOUR_GITHUB_URL)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/daniel-akinbankole-94312a218/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat&logo=github)](https://github.com/danielakbank)
 
 ---
 
