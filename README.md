@@ -1,6 +1,6 @@
 # 🛍️ Review Sentiment Analyser
 
-> An end-to-end NLP web app that classifies product reviews as positive or negative — 
+> An end-to-end NLP web app that classifies product reviews as positive or negative —
 > upload any CSV, select your review column, and get instant sentiment insights.
 
 ## 🔗 Live Demo
@@ -10,12 +10,12 @@
 
 ## 📌 Overview
 
-This project builds a complete sentiment analysis pipeline trained on 500,000+ real 
-Amazon Fine Food reviews. Two models are trained, compared, and evaluated — with the 
+This project builds a complete sentiment analysis pipeline trained on 500,000+ real
+Amazon Fine Food reviews. Two models are trained, compared, and evaluated — with the
 best model deployed as an interactive business intelligence web application.
 
-The app goes beyond simple classification. It lets users upload their own review data, 
-automatically detects the review column, analyses sentiment at scale, and breaks down 
+The app goes beyond simple classification. It lets users upload their own review data,
+automatically detects the review column, analyses sentiment at scale, and breaks down
 results across product categories, regions, or any other grouping in the dataset.
 
 ---
@@ -49,12 +49,13 @@ results across product categories, regions, or any other grouping in the dataset
 | **Overall** | **0.94** | **0.94** | **0.94** |
 
 ### Key Finding
-The logistic regression baseline matches the neural network at 94% overall accuracy. 
-This demonstrates that strong feature engineering (TF-IDF + bigrams) can be just as 
-powerful as deep learning for text classification — while being faster, lighter, and 
+
+The logistic regression baseline matches the neural network at 94% overall accuracy.
+This demonstrates that strong feature engineering (TF-IDF + bigrams) can be just as
+powerful as deep learning for text classification — while being faster, lighter, and
 easier to deploy.
 
-The model performs better on positive reviews (F1: 0.96) than negative ones (F1: 0.79), 
+The model performs better on positive reviews (F1: 0.96) than negative ones (F1: 0.79),
 which is expected given the class imbalance — 85% of reviews in the dataset are positive.
 
 ---
@@ -63,22 +64,21 @@ which is expected given the class imbalance — 85% of reviews in the dataset ar
 
 Based on analysis of 500,000+ reviews:
 
-- **Negative reviews** most commonly mention delivery delays, misleading product 
+- **Negative reviews** most commonly mention delivery delays, misleading product
   descriptions, and quality inconsistencies — clear operational improvement areas
-- **Positive reviews** consistently highlight taste, value for money, and repeat 
+- **Positive reviews** consistently highlight taste, value for money, and repeat
   purchase intent — key drivers of customer loyalty
-- Automatic classification enables customer support teams to **prioritise negative 
+- Automatic classification enables customer support teams to **prioritise negative
   reviews** without manual reading
-- The multi-category breakdown allows businesses to identify **which product lines 
+- The multi-category breakdown allows businesses to identify **which product lines
   or regions have the highest dissatisfaction rates**
-- Sentiment trend analysis over time helps teams **measure the impact** of product 
+- Sentiment trend analysis over time helps teams **measure the impact** of product
   or service changes
 
----
 
 ## 🗂️ Project Structure
 
-amazon-sentiment-analysis/
+review-sentiment-analyser/
 - app/
   - app.py                 # Streamlit web application
 - src/
@@ -116,8 +116,8 @@ amazon-sentiment-analysis/
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/danielakbank/amazon-sentiment-analysis.git
-cd amazon-sentiment-analysis
+git clone https://github.com/danielakbank/review-sentiment-analyser.git
+cd review-sentiment-analyser
 ```
 
 **2. Create and activate a virtual environment**
@@ -150,7 +150,7 @@ The app works with **any CSV file** containing text reviews. To test it:
 3. Upload the CSV
 4. Select `description` as your review column
 5. Select `country` and `variety` as category columns
-6. Click Analyse
+6. Click **Analyse**
 
 You can also use Amazon, Yelp, app store, or any other review dataset in CSV format.
 
@@ -187,7 +187,7 @@ You can also use Amazon, Yelp, app store, or any other review dataset in CSV for
 - Achieves 94% accuracy — strong baseline for this task
 
 ### Neural Network
-- Feedforward network: Dense(256) → BatchNorm → Dropout(0.4) → Dense(128) → Dropout(0.3) → Dense(1)
+- Feedforward network: `Dense(256) → BatchNorm → Dropout(0.4) → Dense(128) → Dropout(0.3) → Dense(1)`
 - Binary cross-entropy loss, Adam optimiser
 - Early stopping (patience=3) to prevent overfitting
 - Training stopped at epoch 2 — validation loss began increasing, indicating overfitting
@@ -198,6 +198,7 @@ You can also use Amazon, Yelp, app store, or any other review dataset in CSV for
 - Smaller memory footprint — better for cloud deployment
 - Easier to maintain and debug
 
+---
 
 ## 👤 Author
 
